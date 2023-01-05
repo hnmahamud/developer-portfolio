@@ -86,3 +86,54 @@ nav li {
     color: #757575;
     margin-bottom: 30px;
 }
+
+/* Main Section Style */
+.main {
+    max-width: 2739px;
+    margin: 0 230px;
+}
+
+/* About Section Style */
+.about {
+    margin-top: 130px;
+    background: #FFF8F3;
+    padding: 131px 157px;
+    border-radius: 10px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 35px;
+    color: #181818;
+}
+
+.section-description {
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    color: #757575;
+    margin-bottom: 30px;
+}
+
+.about-info-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-info {
+
+}
+
+.about-info-title {
+    font-weight: 400;
+    font-size: 20px;
+    color: #757575;
+}
+
+.about-info-description {
+    font-weight: 700;
+    font-size: 20px;
+    color: #474747;
+}

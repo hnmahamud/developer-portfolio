@@ -15,15 +15,27 @@
     color: #FD6E0A;
 }
 
-.btn-primary {
+.btn-primary, .resume-btn-primary {
     height: 64px;
     border-radius: 5px;
-    border: 0;
+    border: 1px solid #FD6E0A;
     background: #FD6E0A;
     color: #FFFFFF;
     font-weight: 700;
     font-size: 20px;
     padding: 18px 35px;
+}
+
+.btn-primary:hover {
+    border: 1px solid #FD6E0A;
+    background: #FFF8F3;
+    color: #FD6E0A;
+}
+
+.resume-btn-primary:hover {
+    border: 1px solid #FD6E0A;
+    background: white;
+    color: #FD6E0A;
 }
 
 .btn-secondary {
@@ -36,6 +48,12 @@
     font-weight: 700;
     font-size: 20px;
     margin-left: 30px;
+}
+
+.btn-secondary:hover {
+    border: 1px solid #FD6E0A;
+    background: #FD6E0A;
+    color: #FFF8F3;
 }
 
 nav {

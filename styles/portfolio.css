@@ -200,5 +200,49 @@ section {
 
 .resume-btn {
     margin-top: 50px;
+    margin-bottom: 113px;
     text-align: center;
 }
+
+/* Footer Section Style */
+.footer {
+    background: #FFF8F3;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 130px 230px;
+    gap: 117px;
+}
+
+.footer-title {
+    font-weight: 700;
+    font-size: 35px;
+    color: #181818;
+    margin-bottom: 20px;
+}
+
+.footer-description {
+    font-weight: 400;
+    font-size: 16px;
+    color: #474747;
+    margin-bottom: 30px;
+}
+
+.connect a{
+    text-decoration: none;
+    margin-right: 24px;
+}
+
+.footer input, textarea {
+    margin-bottom: 24px;
+    border: 0;
+    border-radius: 5px;
+    padding: 18px 30px;
+}
+
+.msg-section-width {
+    width: 100%;
+}
+

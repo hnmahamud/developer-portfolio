@@ -15,7 +15,7 @@
     color: #FD6E0A;
 }
 
-.btn-primary, .resume-btn-primary {
+.btn-primary, .resume-btn-primary, nav-btn-primary {
     height: 64px;
     border-radius: 5px;
     border: 1px solid #FD6E0A;
@@ -47,7 +47,6 @@
     border-radius: 5px;
     font-weight: 700;
     font-size: 20px;
-    margin-left: 30px;
 }
 
 .btn-secondary:hover {
@@ -72,9 +71,21 @@ nav li {
     margin-right: 50px;
 }
 
+nav li a {
+    text-decoration: none;
+    color: #474747;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+nav li a:hover {
+    color: #FD6E0A;
+}
+
 .nav-title {
     font-weight: 800;
     font-size: 45px;
+    color: #474747;
 }
 
 /* Banner Style */
@@ -82,6 +93,10 @@ nav li {
     display: flex;
     margin: 0 200px;
     align-items: center;
+}
+
+.banner img {
+    width: 100%;
 }
 
 .banner-subtitle {
@@ -94,7 +109,7 @@ nav li {
 .banner-title {
     font-weight: 700;
     font-size: 85px;
-    color: #181818;
+    color: #474747;
     margin-bottom: 20px;
 }
 
@@ -107,8 +122,8 @@ nav li {
 
 /* Main Section Style */
 .main {
-    max-width: 2739px;
-    margin: 0 230px;
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 section {
@@ -228,10 +243,12 @@ section {
 }
 
 .footer-container {
+    max-width: 1140px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 130px 230px;
-    gap: 117px;
+    gap: 24px;
+    padding: 130px 0;
 }
 
 .footer-title {
@@ -253,7 +270,7 @@ section {
     margin-right: 24px;
 }
 
-.footer input, textarea {
+input[type = "text"], input[type = "email"], textarea {
     margin-bottom: 24px;
     border: 0;
     border-radius: 5px;
@@ -264,3 +281,136 @@ section {
     width: 100%;
 }
 
+@media screen and (max-width: 576px) {
+    .btn-primary, .resume-btn-primary {
+        height: 35px;
+        border-radius: 5px;
+        border: 1px solid #FD6E0A;
+        background: #FD6E0A;
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 10px;
+        padding: 10px 30px;
+    }
+
+    .btn-secondary {
+        height: 35px;
+        border: 1px solid #FD6E0A;
+        background: #FFF8F3;
+        padding: 17px 23px;
+        color: #FD6E0A;
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: 10px;
+        padding: 10px 30px;
+    }
+
+    .header {
+        background-image: none;
+    }
+
+    .banner {
+        margin: 0 20px;
+    }
+
+    .about, .footer-container {
+        padding: 130px 30px;
+    }
+
+    .section-description, .resume-content {
+        padding: 0 30px;
+    }
+
+    .banner,
+    .skills-container, 
+    .resume-content, 
+    .about-info-container, 
+    .footer-container {
+        flex-direction: column;
+        gap: 24px;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    nav ul  {
+        align-items: flex-end;
+    }
+
+    nav {
+        padding: 20px;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 20px 0 130px;
+    }
+
+    input[type = "text"], input[type = "email"], textarea {
+        padding: 5px 0 5px 5px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .btn-primary, .resume-btn-primary {
+        height: 35px;
+        border-radius: 5px;
+        border: 1px solid #FD6E0A;
+        background: #FD6E0A;
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 10px;
+        padding: 10px 30px;
+    }
+
+    .btn-secondary {
+        height: 35px;
+        border: 1px solid #FD6E0A;
+        background: #FFF8F3;
+        padding: 17px 23px;
+        color: #FD6E0A;
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: 10px;
+        padding: 10px 30px;
+    }
+
+    .header {
+        background-image: none;
+    }
+
+    .banner {
+        margin: 0 20px;
+    }
+
+    .section-description, .resume-content {
+        padding: 0 30px;
+    }
+
+    .banner,
+    .skills-container,
+    .about-info-container {
+        flex-direction: column;
+        gap: 24px;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    nav ul  {
+        align-items: flex-end;
+    }
+
+    nav {
+        padding: 20px;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 20px 0 130px;
+    }
+
+    .footer-container {
+        padding: 130px;
+    }
+}
